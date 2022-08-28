@@ -99,7 +99,7 @@ const userAnswers = () => {
 const init = () => {
   userAnswers()  
     .then((data) =>  writeFile('README.md', generateMarkdown(data)))
-    .then(() => console.log('README.md file has been generated succesfully'))
+    .then(() => console.log('exampleREADME.md file has been generated succesfully'))
     .catch((err)=>console.error(err));
         
  };
