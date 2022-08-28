@@ -17,7 +17,7 @@ const userAnswers = () => {
     {
       type: 'input',
       name: 'description',
-      message: 'Please enter a description of your project (include project motivation, project requirements, problem solved and any plans for future developments)'
+      message: 'Please enter a description of your project (include project motivation, project requirements, problem solved, and any future developments)'
 
     },
     {
@@ -62,7 +62,7 @@ const userAnswers = () => {
     },
     {
       type: 'rawlist',      
-      message: 'Please select one license for your project from the list (Enter the number of the license tou want to select):',
+      message: 'Please select one license for your project from the list (Enter the index of the license you want to select and <enter> to submit):',
       name: 'license',
       choices: [
         'Apache License 2.0',
@@ -84,12 +84,12 @@ const userAnswers = () => {
     {
       type: 'input',
       name: 'email',
-      message: 'Please enter your email address for the contribute and  questions sections',
+      message: 'Please enter your email address for the contribute/questions sections:',
     },     
     {
       type: 'input',
       name: 'github',
-      message: 'Please enter your GitHub username for the contribute and  questions sections',
+      message: 'Please enter your GitHub username for the contribute/guestions sections:',
     },
   ]); 
 };
@@ -98,7 +98,7 @@ const userAnswers = () => {
 // This functon inititalises the app
 const init = () => {
   userAnswers()  
-    .then((data) =>  writeFile('README.md', generateMarkdown(data)))
+    .then((data) =>  writeFile('exampleREADME.md', generateMarkdown(data)))
     .then(() => console.log('exampleREADME.md file has been generated succesfully'))
     .catch((err)=>console.error(err));
         

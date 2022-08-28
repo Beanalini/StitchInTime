@@ -1,7 +1,7 @@
-// renderLicenseBadge function returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// renderLicenseBadge() returns a license badge based on which license is passed in
+// If there is no license, an empty string is returned
 
-function renderLicenseBadge(userData) {
+const renderLicenseBadge = (userData) => {
   
   const operation = userData.license;
   console.log(operation);
@@ -53,7 +53,7 @@ return userData
  
 
 // generateMarkdown()  generate markdown for README
-function generateMarkdown(data) {
+const generateMarkdown = (data) => {
  const userData = renderLicenseBadge(data);
   console.log(userData);
   
