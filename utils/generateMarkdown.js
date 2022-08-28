@@ -84,12 +84,8 @@ function generateMarkdown(data) {
   ${userData.tests}
 
   ## Technologies Used
-  - ${userData.tech[0]}
-  - ${userData.tech[1]}
-  - ${userData.tech[2]}
-  - ${userData.tech[3]}
-  - ${userData.tech[4]}
-  - ${userData.tech[5]}
+  - ${userData.tech}
+  
 
   ## Credits
   ${userData.credits}

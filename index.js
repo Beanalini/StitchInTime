@@ -94,10 +94,8 @@ const userAnswers = () => {
   ]); 
 };
 
-// TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+// This functon inititalises the app
 const init = () => {
   userAnswers()  
     .then((data) =>  writeFile('README.md', generateMarkdown(data)))
@@ -107,5 +105,5 @@ const init = () => {
  };
 
  
-// Function call to initialize app
+// Function call to initialise app
 init();
