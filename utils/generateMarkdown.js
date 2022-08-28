@@ -69,7 +69,7 @@ const generateMarkdown = (data) => {
   * [Questions](#questions)
   * [How to Contribute](#How-to-Contribute)   
   * [License](#license)
-  * 
+  
   ## Description
   ${userData.description}
 

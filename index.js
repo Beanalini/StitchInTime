@@ -5,19 +5,19 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const {writeFile} = require('fs').promises;
 
 
-// This function  prompts the user with questions and creates an arraryfor user input
+// This function  prompts the user with questions and creates an arrary containing user provided answers
 const userAnswers = () => {
   return inquirer.prompt([
     {
       type: 'input',
       name: 'projTitle',
-      message: 'Please enter your project title'
+      message: 'Please enter your project title:'
 
     },
     {
       type: 'input',
       name: 'description',
-      message: 'Please enter a description of your project (include project motivation, project requirements, problem solved, and any future developments)'
+      message: 'Please enter a description of your project - a good project description should include; project motivation, problem solved and any future developments:'
 
     },
     {
@@ -35,14 +35,14 @@ const userAnswers = () => {
     },  
     {
       type: 'input',
-      name: 'test',
-      message: 'Please enter instructions to help the user test the app:',
+      name: 'tests',
+      message: 'Please enter instructions to help the user test this app:',
       default: 'No tests have been implemented.'
 
     },         
     {
       type: 'checkbox',      
-      message: 'Please select the technologies you used in your project: (use arrow keys, spacebar to select an option and <enter> to submit:',
+      message: 'Please select the technologies you used in your project - use arrow keys to move up/down the list, spacebar to select an option and <enter> to submit:',
       name: 'tech',
       choices: [
         ' HTML',
@@ -56,7 +56,7 @@ const userAnswers = () => {
     {
       type: 'input',
       name: 'credits',
-      message: 'List any collaborators, thrid part attributions or resources used in the development of this project:',
+      message: 'List any collaborators, thrid party attributions or resources used in the development of this project:',
       default: 'No other collaborators or resources were used in the development of this project.'
 
     },
@@ -98,7 +98,7 @@ const userAnswers = () => {
 // This functon inititalises the app
 const init = () => {
   userAnswers()  
-    .then((data) =>  writeFile('exampleREADME.md', generateMarkdown(data)))
+    .then((data) =>  writeFile('README.md', generateMarkdown(data)))
     .then(() => console.log('exampleREADME.md file has been generated succesfully'))
     .catch((err)=>console.error(err));
         
