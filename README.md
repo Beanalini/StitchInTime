@@ -95,10 +95,11 @@
   
   The following resources have been used in this project:
   - [nodejs interactive command line prompts](https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts) 
-  - [Professional README Guide](https://idp.bootcampspot.com/ui/?requestId=e44681db-cf4f-4631-b0dc-2630a2a449f1)
+  - [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
   - [MarkDown License Badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
   - [Choose an Open Source License](https://choosealicense.com/)
   - [npm inquirer.js](https://www.npmjs.com/package//inquirer)
+  - [shileds IO](https://shields.io/category/license)
 
 
   ## Questions

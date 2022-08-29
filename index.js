@@ -24,7 +24,7 @@ const userAnswers = () => {
       type: 'input',
       name: 'installation',
       message: 'What are the steps required to install your project?',
-      default: 'To install any dependencies run the terminal command, npm i '
+      default: 'To install dependencies run the terminal command, npm i '
 
     }, 
     {
@@ -51,6 +51,7 @@ const userAnswers = () => {
         ' JQuery',
         ' NodeJs',
         ' MySQL',
+        ' Not applicable'
       ]
     },
     {
