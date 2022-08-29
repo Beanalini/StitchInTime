@@ -1,11 +1,12 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
+//inquirer version 8.2.4 is used in this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-const {writeFile} = require('fs').promises;
 
 
-// This function  prompts the user with questions and creates an arrary containing user provided answers
+
+// This function  prompts the user with questions and stores user answers in the inquirer.prompt object
 const userAnswers = () => {
   return inquirer.prompt([
     {
@@ -98,13 +99,18 @@ const userAnswers = () => {
 
 // This functon inititalises the app
 const init = () => {
+  //call the userAnswers() to display the prompts
   userAnswers()  
-    .then((data) =>  writeFile('README.md', generateMarkdown(data)))
-    .then(() => console.log('exampleREADME.md file has been generated succesfully'))
-    .catch((err)=>console.error(err));
+    /* using call back funtions pass user answers  array, contained in 'data', as a parameter  to generateMarkdown() write the string returned from  generateMarkdown() to sampleREADME.md*/
+    .then((data) =>  {
+      console.log(data);
+      fs.writeFile('sampleREADME.md', generateMarkdown(data), (error) => {
+        const outputMsg = (error)? 'Error has occured':'README file has been generated successfully';
+        console.log(outputMsg)
+      }) 
         
- };
+ });
 
- 
+}
 // Function call to initialise app
 init();

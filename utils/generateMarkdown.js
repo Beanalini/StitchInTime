@@ -1,5 +1,6 @@
-// renderLicenseBadge() returns a license badge based on which license is passed in
-// If there is no license, an empty string is returned
+// renderLicenseBadge() adds the link for the license badge to the user answer object
+// If there is no license, an empty string added instead of a link
+// the user answer object is returned to the calling function
 
 const renderLicenseBadge = (userData) => {
   
@@ -52,10 +53,11 @@ return userData
 }
  
 
-// generateMarkdown()  generate markdown for README
+/* generateMarkdown()  carries out string interpolation and replaces template literal placeholders with the values passed from the user answers object and concatanates into one string which is returned to the calling function */
 const generateMarkdown = (data) => {
+ //Get the link for the license badge 
  const userData = renderLicenseBadge(data);
-  console.log(userData);
+  //console.log(userData);
   
   return `# ${userData.projTitle} ${userData.badge}  
   
