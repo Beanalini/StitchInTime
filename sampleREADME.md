@@ -1,4 +1,4 @@
-# Proj Gen [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)  
+# README Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
   
   ## Table of Contents  
   * [Description](#description)
@@ -12,14 +12,14 @@
   * [License](#license)
   
   ## Description
-  This application generates readme files based on user responses to question prompts.
+  The README Generator is a command-line application that dynamically generates a professional readmee file.
 
   ## Installation
   
     To install dependencies run the terminal command, npm i 
 
   ## Usage
-  run node index.js
+  Enter node index.js in your terminal and follow the prompts to generate sampleREADME.md file.
 
   ## Tests
   No tests have been implemented.
@@ -43,7 +43,7 @@
   
 
   ## License
-  This project is covered under the Boost Software License 1.00  
+  This project is covered under the MIT License  
   
-  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt) 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
   

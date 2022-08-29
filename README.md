@@ -4,6 +4,7 @@
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Walk-through Video](walk-through-video)
   * [Tests](#tests)
   * [Technologies Used](#technologies-used)
   * [Credits](#credits)
@@ -14,7 +15,7 @@
   ## Description
   The README file is an essential part of any development; however, it tends to be created in haste at the completion of a project.  The motivation behind this project is to address the latter issue allowing the developer to quickly and easily generate a README.md file, allowing more time to focus on the project.  
 
-  The README Generator application developed in this project is a command-line application that dynamically generates a professional README.md file from a user’s input, in response to a set of question prompts. This application uses Node JS and the npm inquirer package to provide the command-line user interface.
+  The README Generator application developed in this project is a command-line application that dynamically generates a professional README.md file from a user’s input, in response to a set of question prompts. This application uses Node JS and the npm inquirer version 8.2.4 package to provide the command-line user interface.
 
   Future developments:
   - Give the user the option to enter a directory path so that the generated README file is saved to a directory that is different to the one the application is run from. 
@@ -53,11 +54,11 @@
   THEN I am taken to the corresponding section of the README
   ```
 
-  ## Installation
+## Installation
   
     To install any dependencies run the terminal command, npm i 
 
-  ## Usage
+## Usage
   To run the README Generator App: 
   
   - Enter ```node index.js```  at the command-line prompt.
@@ -70,26 +71,35 @@
   - After answering all the prompts a file with the name 'sampleREADME.md' will be generated containing the README for your project. 
   - The README Generator can be used for all your projects - please note that if you run the application again in a directory where a sampleREADME.md already exists it will be overwritten, either rename the existing file or copy it to another directory.
 
-  ### Walk-through Video
+## Walk-through Video
 
-  A  walk-through video demonstrating the functionality of the README Generator is provided below:
+  A  walk-through video demonstrating the functionality of the README Generator can be viewed at the following link:
 
+- [README Generator walk-through video](https://watch.screencastify.com/v/2FwG1l7TcUPFJNzJjY3W)
 
   ### Screen Shots 
   
+  The following screen shot shows the prompts displayed to the user along with user answers
 
-  ## Tests
+  ![terminal view](./assets/images/terminal.png)
+
+
+  The screen shot below displays the terminal view and the README.md file generated from the user responses to the questions prompts.
+
+![Terminal prompts and answers](./assets/images/readme_screen.png)
+## Tests
+
   No tests have been implemented
 
-  ## Technologies Used
+## Technologies Used
 
   -  JavaScript
   - NodeJs
-  - NPM inquirer package
+  - NPM inquirer package version 8.2.4
   
   
 
-  ## Credits
+## Credits
 
   No other collaborators have been involved in the creation of this application.
   
@@ -102,19 +112,18 @@
   - [shileds IO](https://shields.io/category/license)
 
 
-  ## Questions
+## Questions
   If you have any questions regarding this project or contents of this repository, please contact me via:
   
   - email: dat826@gmail.com
   - GitHub: [Beanalini.com](https://github.com/Beanalini.com)  
 
 
-  
-  ## Contributing
+## Contributing
   If you would like to contribute to this project you can contact me by email at dat826@gmail.com or through  GitHub  @[Beanalini.com](https://github.com/Beanalini.com).
   
 
-  ## License
+## License
   This project is covered under the MIT License.  
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
